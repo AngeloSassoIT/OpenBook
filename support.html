@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      var q = (location.search.match(/[?&]lang=(en|it|es|fr|de)/) || [])[1];
+      var saved; try { saved = localStorage.getItem('openbook-lang'); } catch (e) {}
+      var nav = (navigator.language || 'en').slice(0,2).toLowerCase();
+      var supported = ['en', 'it', 'es', 'fr', 'de'];
+      var lang = q || saved || (supported.indexOf(nav) >= 0 ? nav : 'en');
+      document.documentElement.classList.add('lang-' + lang);
+      document.documentElement.setAttribute('lang', lang);
+    })();
+  </script>
+  <title>OpenBook — Support</title>
+  <meta name="description" content="Support and FAQ for OpenBook, the free public-domain reading app.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/icon.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="images/icon.png" alt="OpenBook"> OpenBook</a>
+      <nav class="nav">
+        <a href="index.html#features"><span data-lang="en">Features</span><span data-lang="it">Funzioni</span><span data-lang="es">Funciones</span><span data-lang="fr">Fonctionnalités</span><span data-lang="de">Funktionen</span></a>
+        <a href="support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span><span data-lang="es">Soporte</span><span data-lang="fr">Support</span><span data-lang="de">Support</span></a>
+        <a href="privacy.html">Privacy</a>
+        <span class="lang-toggle"><button data-set="en">EN</button><button data-set="it">IT</button><button data-set="es">ES</button><button data-set="fr">FR</button><button data-set="de">DE</button></span>
+      </nav>
+    </div>
+  </header>
+
+  <div class="doc">
+    <a class="back" href="index.html">← <span data-lang="en">Back to home</span><span data-lang="it">Torna alla home</span><span data-lang="es">Volver al inicio</span><span data-lang="fr">Retour à l&#x27;accueil</span><span data-lang="de">Zurück zur Startseite</span></a>
+
+    <div data-lang="en">
+      <h1>Support</h1>
+      <p>Need a hand with OpenBook? Most questions are answered below. If you can&#x27;t find what you need, email us and we&#x27;ll help quickly.</p>
+      <p><strong>Contact:</strong> <a href="mailto:support@simplebuild.it">support@simplebuild.it</a></p>
+      <div class="faq"><h3>What is OpenBook?</h3>
+        <p>OpenBook is a reading app for public-domain books: hundreds of complete classics, organized by category and by language, in an elegant, calm reader. It&#x27;s completely free.</p></div>
+      <div class="faq"><h3>Are the books really free and legal?</h3>
+        <p>Yes. Every title is in the public domain (source: Project Gutenberg) and free of copyright. You can read them all for free, with no purchases or subscriptions.</p></div>
+      <div class="faq"><h3>Which languages are available?</h3>
+        <p>The app interface is in English, Italian, Spanish, French and German. The content spans these five languages too — each work in its original language and, where they exist, in public-domain translations.</p></div>
+      <div class="faq"><h3>Do I need an account?</h3>
+        <p>No. No sign-up, no email, no login. Download the app and start reading.</p></div>
+      <div class="faq"><h3>Does it work offline?</h3>
+        <p>Yes. Each book downloads the first time you open it, then stays on your device for offline reading, anywhere.</p></div>
+      <div class="faq"><h3>Where is my data? What about privacy?</h3>
+        <p>Your favorites and reading progress live only in your own private iCloud (CloudKit). The developer can&#x27;t read them. There are no ads and no tracking. See our Privacy Policy.</p></div>
+    </div>
+    <div data-lang="it">
+      <h1>Supporto</h1>
+      <p>Ti serve aiuto con OpenBook? Qui sotto trovi le risposte più comuni. Se non trovi ciò che cerchi, scrivici e ti aiutiamo subito.</p>
+      <p><strong>Contatto:</strong> <a href="mailto:support@simplebuild.it">support@simplebuild.it</a></p>
+      <div class="faq"><h3>Cos&#x27;è OpenBook?</h3>
+        <p>OpenBook è un&#x27;app di lettura per libri di pubblico dominio: centinaia di classici completi, organizzati per categoria e per lingua, in un lettore elegante e sereno. È del tutto gratuita.</p></div>
+      <div class="faq"><h3>I libri sono davvero gratis e legali?</h3>
+        <p>Sì. Ogni titolo è di pubblico dominio (fonte: Project Gutenberg), libero da diritti. Puoi leggerli tutti gratis, senza acquisti né abbonamenti.</p></div>
+      <div class="faq"><h3>Quali lingue sono disponibili?</h3>
+        <p>L&#x27;interfaccia è in inglese, italiano, spagnolo, francese e tedesco. Anche i contenuti coprono queste cinque lingue — ogni opera nella lingua originale e, quando esistono, nelle traduzioni di pubblico dominio.</p></div>
+      <div class="faq"><h3>Serve un account?</h3>
+        <p>No. Nessuna registrazione, nessuna email, nessun login. Scarica l&#x27;app e inizia a leggere.</p></div>
+      <div class="faq"><h3>Funziona offline?</h3>
+        <p>Sì. Ogni libro si scarica alla prima apertura, poi resta sul dispositivo per leggerlo offline, ovunque.</p></div>
+      <div class="faq"><h3>Dove sono i miei dati? E la privacy?</h3>
+        <p>I tuoi preferiti e i tuoi progressi restano solo nel tuo iCloud privato (CloudKit). Lo sviluppatore non può leggerli. Nessuna pubblicità e nessun tracciamento. Vedi l&#x27;Informativa sulla Privacy.</p></div>
+    </div>
+    <div data-lang="es">
+      <h1>Soporte</h1>
+      <p>¿Necesitas ayuda con OpenBook? Abajo encontrarás las preguntas más comunes. Si no encuentras lo que buscas, escríbenos y te ayudamos enseguida.</p>
+      <p><strong>Contacto:</strong> <a href="mailto:support@simplebuild.it">support@simplebuild.it</a></p>
+      <div class="faq"><h3>¿Qué es OpenBook?</h3>
+        <p>OpenBook es una app de lectura para libros de dominio público: cientos de clásicos completos, organizados por categoría e idioma, en un lector elegante y sereno. Es totalmente gratis.</p></div>
+      <div class="faq"><h3>¿Los libros son de verdad gratis y legales?</h3>
+        <p>Sí. Cada obra es de dominio público (fuente: Project Gutenberg), libre de derechos. Puedes leerlas gratis, sin compras ni suscripciones.</p></div>
+      <div class="faq"><h3>¿Qué idiomas hay?</h3>
+        <p>La interfaz está en inglés, italiano, español, francés y alemán. Los contenidos también abarcan estos cinco idiomas — cada obra en su lengua original y, cuando existen, en traducciones de dominio público.</p></div>
+      <div class="faq"><h3>¿Necesito una cuenta?</h3>
+        <p>No. Nada de registro, correo ni contraseñas. Descargas la app y empiezas a leer.</p></div>
+      <div class="faq"><h3>¿Funciona sin conexión?</h3>
+        <p>Sí. Cada libro se descarga al abrirlo por primera vez y se queda en tu dispositivo para leerlo sin conexión, donde quieras.</p></div>
+      <div class="faq"><h3>¿Dónde están mis datos? ¿Y la privacidad?</h3>
+        <p>Tus favoritos y tu progreso se guardan solo en tu iCloud privado (CloudKit). El desarrollador no puede leerlos. No hay anuncios ni seguimiento. Consulta nuestra Política de Privacidad.</p></div>
+    </div>
+    <div data-lang="fr">
+      <h1>Support</h1>
+      <p>Besoin d&#x27;aide avec OpenBook ? Vous trouverez ci-dessous les questions les plus fréquentes. Si vous ne trouvez pas votre réponse, écrivez-nous et nous vous aiderons rapidement.</p>
+      <p><strong>Contact:</strong> <a href="mailto:support@simplebuild.it">support@simplebuild.it</a></p>
+      <div class="faq"><h3>Qu&#x27;est-ce qu&#x27;OpenBook ?</h3>
+        <p>OpenBook est une application de lecture pour les livres du domaine public : des centaines d&#x27;œuvres complètes, rangées par catégorie et par langue, dans un lecteur élégant et apaisant. C&#x27;est entièrement gratuit.</p></div>
+      <div class="faq"><h3>Les livres sont-ils vraiment gratuits et légaux ?</h3>
+        <p>Oui. Chaque œuvre est dans le domaine public (source : Project Gutenberg), libre de droits. Tout est gratuit, sans achat ni abonnement.</p></div>
+      <div class="faq"><h3>Quelles langues sont proposées ?</h3>
+        <p>L&#x27;interface est en anglais, français, espagnol, italien et allemand. Les contenus couvrent aussi ces cinq langues — chaque livre dans sa langue d&#x27;origine et, si elles existent, en traductions du domaine public.</p></div>
+      <div class="faq"><h3>Faut-il créer un compte ?</h3>
+        <p>Non. Aucun compte, aucune connexion, aucune adresse e-mail : vous ouvrez l&#x27;appli et vous lisez.</p></div>
+      <div class="faq"><h3>Est-ce que ça marche hors ligne ?</h3>
+        <p>Oui. Chaque livre se télécharge à la première ouverture, puis reste sur votre appareil pour une lecture 100 % hors ligne.</p></div>
+      <div class="faq"><h3>Où sont mes données ? Et ma vie privée ?</h3>
+        <p>Vos favoris et votre progression restent uniquement dans votre iCloud privé (CloudKit) : le développeur n&#x27;y a pas accès. Pas de publicité, pas de traçage. Voir notre politique de confidentialité.</p></div>
+    </div>
+    <div data-lang="de">
+      <h1>Support</h1>
+      <p>Brauchst du Hilfe bei OpenBook? Unten findest du die häufigsten Fragen. Falls du nicht fündig wirst, schreib uns einfach – wir helfen schnell.</p>
+      <p><strong>Kontakt:</strong> <a href="mailto:support@simplebuild.it">support@simplebuild.it</a></p>
+      <div class="faq"><h3>Was ist OpenBook?</h3>
+        <p>OpenBook ist eine Lese-App für gemeinfreie Bücher: hunderte vollständige Klassiker, nach Kategorie und Sprache geordnet, in einem eleganten, ruhigen Reader. Komplett kostenlos.</p></div>
+      <div class="faq"><h3>Sind die Bücher wirklich gratis und legal?</h3>
+        <p>Ja. Jedes Werk ist gemeinfrei (Quelle: Project Gutenberg) und frei von Urheberrechten. Alles ist gratis – ohne Käufe, ohne Abo.</p></div>
+      <div class="faq"><h3>Welche Sprachen gibt es?</h3>
+        <p>Die Oberfläche gibt es auf Deutsch, Englisch, Italienisch, Französisch und Spanisch. Auch die Inhalte verteilen sich auf diese fünf Sprachen – jedes Werk im Original und, wo vorhanden, in gemeinfreien Übersetzungen.</p></div>
+      <div class="faq"><h3>Brauche ich ein Konto?</h3>
+        <p>Nein. Kein Konto, keine Anmeldung, keine E-Mail. App öffnen und loslesen.</p></div>
+      <div class="faq"><h3>Funktioniert das offline?</h3>
+        <p>Ja. Jedes Buch lädt beim ersten Öffnen und bleibt danach auf dem Gerät – auch ohne Internet.</p></div>
+      <div class="faq"><h3>Wo liegen meine Daten? Und die Privatsphäre?</h3>
+        <p>Favoriten und Lesefortschritt liegen ausschließlich in deiner privaten iCloud (CloudKit). Der Entwickler kann sie nicht sehen. Keine Werbung, kein Tracking. Siehe unsere Datenschutzerklärung.</p></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <a href="index.html"><span data-lang="en">Home</span><span data-lang="it">Home</span><span data-lang="es">Inicio</span><span data-lang="fr">Accueil</span><span data-lang="de">Start</span></a>
+        <a href="support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span><span data-lang="es">Soporte</span><span data-lang="fr">Support</span><span data-lang="de">Support</span></a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+      <p class="small">© 2026 SimpleBuild · OpenBook · <a href="mailto:support@simplebuild.it">support@simplebuild.it</a></p>
+    </div>
+  </footer>
+
+  <script src="lang.js"></script>
+</body>
+</html>

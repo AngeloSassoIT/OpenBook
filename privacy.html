@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      var q = (location.search.match(/[?&]lang=(en|it|es|fr|de)/) || [])[1];
+      var saved; try { saved = localStorage.getItem('openbook-lang'); } catch (e) {}
+      var nav = (navigator.language || 'en').slice(0,2).toLowerCase();
+      var supported = ['en', 'it', 'es', 'fr', 'de'];
+      var lang = q || saved || (supported.indexOf(nav) >= 0 ? nav : 'en');
+      document.documentElement.classList.add('lang-' + lang);
+      document.documentElement.setAttribute('lang', lang);
+    })();
+  </script>
+  <title>OpenBook — Privacy Policy</title>
+  <meta name="description" content="OpenBook privacy policy: your data stays in your iCloud. No tracking, no ads, no data collection.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/icon.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="images/icon.png" alt="OpenBook"> OpenBook</a>
+      <nav class="nav">
+        <a href="index.html#features"><span data-lang="en">Features</span><span data-lang="it">Funzioni</span><span data-lang="es">Funciones</span><span data-lang="fr">Fonctionnalités</span><span data-lang="de">Funktionen</span></a>
+        <a href="support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span><span data-lang="es">Soporte</span><span data-lang="fr">Support</span><span data-lang="de">Support</span></a>
+        <a href="privacy.html">Privacy</a>
+        <span class="lang-toggle"><button data-set="en">EN</button><button data-set="it">IT</button><button data-set="es">ES</button><button data-set="fr">FR</button><button data-set="de">DE</button></span>
+      </nav>
+    </div>
+  </header>
+
+  <div class="doc">
+    <a class="back" href="index.html">← <span data-lang="en">Back to home</span><span data-lang="it">Torna alla home</span><span data-lang="es">Volver al inicio</span><span data-lang="fr">Retour à l&#x27;accueil</span><span data-lang="de">Zurück zur Startseite</span></a>
+
+    <div data-lang="en">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Effective date: 13 July 2026</p>
+      <p>OpenBook (“the app”) is a reading app for public-domain books. In short: OpenBook is built for privacy. The developer does not collect, store, or have access to your data.</p>
+      <h2>1. Who we are</h2>
+      <p>OpenBook is developed by SimpleBuild. You can reach us at support@simplebuild.it. For what you create in the app (your favorites and reading progress), the data lives in your own iCloud account and is under your control.</p>
+      <h2>2. What data the app handles</h2>
+      <p>The app handles only what you create while reading: your favorites and your reading progress (which book and chapter you reached). This data is stored only in your iCloud, via Apple CloudKit, in your account&#x27;s private database.</p>
+      <h2>3. Where data is stored</h2>
+      <p>Your data is stored in Apple&#x27;s iCloud infrastructure, tied to your Apple ID. There is no developer-owned server or backend. We do not transmit your data to ourselves or to any third party.</p>
+      <h2>4. What we do NOT collect</h2>
+      <p>No tracking and no advertising identifiers. No analytics, first-party or third-party. No ads. No data collection by the developer. No account, email, phone number or login is required.</p>
+      <h2>5. Book texts</h2>
+      <p>Book texts are complete public-domain works (source: Project Gutenberg), delivered as Apple On-Demand Resources and cached on your device for offline reading. Downloading a book involves no personal data.</p>
+      <h2>6. Your control and rights</h2>
+      <p>You are in control at all times. You can remove favorites and reading progress in the app, and you can remove all app data by deleting the app and its iCloud data from your iCloud settings.</p>
+      <h2>7. Children</h2>
+      <p>OpenBook does not knowingly collect any personal data from anyone, including children. Note that the library contains classic literature, some of which addresses mature themes.</p>
+      <h2>8. Changes</h2>
+      <p>If this policy changes, we will update this page and the effective date above.</p>
+      <h2>9. Contact</h2>
+      <p>Questions about privacy? Email support@simplebuild.it.</p>
+    </div>
+    <div data-lang="it">
+      <h1>Informativa sulla Privacy</h1>
+      <p class="updated">Data di efficacia: 13 luglio 2026</p>
+      <p>OpenBook (“l&#x27;app”) è un&#x27;app di lettura di libri di pubblico dominio. In breve: OpenBook è progettata per la privacy. Lo sviluppatore non raccoglie, non conserva e non può accedere ai tuoi dati.</p>
+      <h2>1. Chi siamo</h2>
+      <p>OpenBook è sviluppata da SimpleBuild. Puoi contattarci a support@simplebuild.it. Per ciò che crei nell&#x27;app (preferiti e progressi di lettura), i dati risiedono nel tuo account iCloud e sono sotto il tuo controllo.</p>
+      <h2>2. Quali dati tratta l&#x27;app</h2>
+      <p>L&#x27;app tratta solo ciò che crei leggendo: i tuoi preferiti e i tuoi progressi di lettura (quale libro e capitolo hai raggiunto). Questi dati sono salvati solo nel tuo iCloud, tramite Apple CloudKit, nel database privato del tuo account.</p>
+      <h2>3. Dove sono conservati i dati</h2>
+      <p>I dati sono conservati nell&#x27;infrastruttura iCloud di Apple, associata al tuo Apple ID. Non esiste alcun server o backend dello sviluppatore. Non trasmettiamo i tuoi dati a noi stessi né a terze parti.</p>
+      <h2>4. Cosa NON raccogliamo</h2>
+      <p>Nessun tracciamento e nessun identificatore pubblicitario. Nessuna analitica, propria o di terze parti. Nessuna pubblicità. Nessuna raccolta dati da parte dello sviluppatore. Non è richiesto alcun account, email, numero di telefono o login.</p>
+      <h2>5. I testi dei libri</h2>
+      <p>I testi sono opere complete di pubblico dominio (fonte: Project Gutenberg), distribuite come Apple On-Demand Resources e memorizzate sul dispositivo per la lettura offline. Lo scaricamento di un libro non comporta alcun dato personale.</p>
+      <h2>6. Il tuo controllo e i tuoi diritti</h2>
+      <p>Hai sempre il controllo. Puoi rimuovere preferiti e progressi nell&#x27;app e puoi eliminare tutti i dati dell&#x27;app rimuovendo l&#x27;app e i suoi dati iCloud dalle impostazioni di iCloud.</p>
+      <h2>7. Minori</h2>
+      <p>OpenBook non raccoglie consapevolmente alcun dato personale da chiunque, minori inclusi. Nota che la biblioteca contiene letteratura classica, alcune opere della quale affrontano temi per adulti.</p>
+      <h2>8. Modifiche</h2>
+      <p>Se questa informativa cambia, aggiorneremo questa pagina e la data di efficacia qui sopra.</p>
+      <h2>9. Contatti</h2>
+      <p>Domande sulla privacy? Scrivi a support@simplebuild.it.</p>
+    </div>
+    <div data-lang="es">
+      <h1>Política de Privacidad</h1>
+      <p class="updated">Fecha de entrada en vigor: 13 de julio de 2026</p>
+      <p>OpenBook (“la app”) es una app de lectura de libros de dominio público. En resumen: OpenBook está diseñada para la privacidad. El desarrollador no recopila, no almacena y no puede acceder a tus datos.</p>
+      <h2>1. Quiénes somos</h2>
+      <p>OpenBook está desarrollada por SimpleBuild. Puedes contactarnos en support@simplebuild.it. Para lo que creas en la app (tus favoritos y tu progreso de lectura), los datos residen en tu propia cuenta de iCloud y están bajo tu control.</p>
+      <h2>2. Qué datos gestiona la app</h2>
+      <p>La app gestiona solo lo que creas al leer: tus favoritos y tu progreso de lectura (qué libro y capítulo alcanzaste). Estos datos se guardan solo en tu iCloud, mediante Apple CloudKit, en la base de datos privada de tu cuenta.</p>
+      <h2>3. Dónde se guardan los datos</h2>
+      <p>Tus datos se guardan en la infraestructura de iCloud de Apple, vinculada a tu Apple ID. No existe ningún servidor ni backend del desarrollador. No transmitimos tus datos a nosotros ni a terceros.</p>
+      <h2>4. Qué NO recopilamos</h2>
+      <p>Sin seguimiento ni identificadores publicitarios. Sin analítica, propia o de terceros. Sin anuncios. Sin recopilación de datos por parte del desarrollador. No se requiere cuenta, correo, teléfono ni inicio de sesión.</p>
+      <h2>5. Los textos de los libros</h2>
+      <p>Los textos son obras completas de dominio público (fuente: Project Gutenberg), entregadas como Apple On-Demand Resources y guardadas en tu dispositivo para leer sin conexión. Descargar un libro no implica ningún dato personal.</p>
+      <h2>6. Tu control y tus derechos</h2>
+      <p>Tú tienes el control en todo momento. Puedes eliminar favoritos y progreso en la app, y puedes eliminar todos los datos de la app borrando la app y sus datos de iCloud desde los ajustes de iCloud.</p>
+      <h2>7. Menores</h2>
+      <p>OpenBook no recopila conscientemente ningún dato personal de nadie, incluidos los menores. Ten en cuenta que la biblioteca contiene literatura clásica, parte de la cual aborda temas para adultos.</p>
+      <h2>8. Cambios</h2>
+      <p>Si esta política cambia, actualizaremos esta página y la fecha de entrada en vigor anterior.</p>
+      <h2>9. Contacto</h2>
+      <p>¿Dudas sobre privacidad? Escribe a support@simplebuild.it.</p>
+    </div>
+    <div data-lang="fr">
+      <h1>Politique de confidentialité</h1>
+      <p class="updated">Date d&#x27;entrée en vigueur : 13 juillet 2026</p>
+      <p>OpenBook (“l&#x27;application”) est une application de lecture de livres du domaine public. En bref : OpenBook est conçue pour la confidentialité. Le développeur ne collecte pas, ne conserve pas et n&#x27;a pas accès à vos données.</p>
+      <h2>1. Qui sommes-nous</h2>
+      <p>OpenBook est développée par SimpleBuild. Vous pouvez nous joindre à support@simplebuild.it. Pour ce que vous créez dans l&#x27;application (vos favoris et votre progression de lecture), les données résident dans votre propre compte iCloud et sont sous votre contrôle.</p>
+      <h2>2. Quelles données l&#x27;application traite-t-elle</h2>
+      <p>L&#x27;application ne traite que ce que vous créez en lisant : vos favoris et votre progression de lecture (le livre et le chapitre atteints). Ces données sont stockées uniquement dans votre iCloud, via Apple CloudKit, dans la base de données privée de votre compte.</p>
+      <h2>3. Où les données sont-elles stockées</h2>
+      <p>Vos données sont stockées dans l&#x27;infrastructure iCloud d&#x27;Apple, liée à votre identifiant Apple. Il n&#x27;existe aucun serveur ni backend du développeur. Nous ne transmettons vos données ni à nous-mêmes ni à des tiers.</p>
+      <h2>4. Ce que nous ne collectons PAS</h2>
+      <p>Aucun traçage ni identifiant publicitaire. Aucune statistique, interne ou tierce. Aucune publicité. Aucune collecte de données par le développeur. Aucun compte, e-mail, téléphone ou connexion n&#x27;est requis.</p>
+      <h2>5. Les textes des livres</h2>
+      <p>Les textes sont des œuvres complètes du domaine public (source : Project Gutenberg), livrées via Apple On-Demand Resources et conservées sur votre appareil pour la lecture hors ligne. Télécharger un livre n&#x27;implique aucune donnée personnelle.</p>
+      <h2>6. Votre contrôle et vos droits</h2>
+      <p>Vous gardez le contrôle à tout moment. Vous pouvez supprimer favoris et progression dans l&#x27;application, et supprimer toutes les données de l&#x27;application en supprimant l&#x27;appli et ses données iCloud depuis vos réglages iCloud.</p>
+      <h2>7. Enfants</h2>
+      <p>OpenBook ne collecte sciemment aucune donnée personnelle de qui que ce soit, y compris des enfants. Notez que la bibliothèque contient de la littérature classique, dont certaines œuvres abordent des thèmes pour adultes.</p>
+      <h2>8. Modifications</h2>
+      <p>Si cette politique change, nous mettrons à jour cette page et la date d&#x27;entrée en vigueur ci-dessus.</p>
+      <h2>9. Contact</h2>
+      <p>Des questions sur la confidentialité ? Écrivez à support@simplebuild.it.</p>
+    </div>
+    <div data-lang="de">
+      <h1>Datenschutzerklärung</h1>
+      <p class="updated">Gültig ab: 13. Juli 2026</p>
+      <p>OpenBook („die App“) ist eine Lese-App für gemeinfreie Bücher. Kurz gesagt: OpenBook ist auf Datenschutz ausgelegt. Der Entwickler erfasst, speichert und sieht deine Daten nicht.</p>
+      <h2>1. Wer wir sind</h2>
+      <p>OpenBook wird von SimpleBuild entwickelt. Du erreichst uns unter support@simplebuild.it. Für das, was du in der App erstellst (Favoriten und Lesefortschritt), liegen die Daten in deinem eigenen iCloud-Konto und unter deiner Kontrolle.</p>
+      <h2>2. Welche Daten die App verarbeitet</h2>
+      <p>Die App verarbeitet nur, was du beim Lesen erstellst: deine Favoriten und deinen Lesefortschritt (welches Buch und Kapitel du erreicht hast). Diese Daten werden ausschließlich in deiner iCloud über Apple CloudKit in der privaten Datenbank deines Kontos gespeichert.</p>
+      <h2>3. Wo die Daten gespeichert werden</h2>
+      <p>Deine Daten liegen in Apples iCloud-Infrastruktur, verknüpft mit deiner Apple-ID. Es gibt keinen Server und kein Backend des Entwicklers. Wir übertragen deine Daten weder an uns noch an Dritte.</p>
+      <h2>4. Was wir NICHT erfassen</h2>
+      <p>Kein Tracking und keine Werbe-IDs. Keine Analyse, weder eigene noch von Dritten. Keine Werbung. Keine Datenerfassung durch den Entwickler. Kein Konto, keine E-Mail, keine Telefonnummer und kein Login erforderlich.</p>
+      <h2>5. Die Buchtexte</h2>
+      <p>Die Texte sind vollständige gemeinfreie Werke (Quelle: Project Gutenberg), ausgeliefert als Apple On-Demand Resources und für das Offline-Lesen auf deinem Gerät gespeichert. Das Laden eines Buchs umfasst keine personenbezogenen Daten.</p>
+      <h2>6. Deine Kontrolle und Rechte</h2>
+      <p>Du hast jederzeit die Kontrolle. Du kannst Favoriten und Fortschritt in der App entfernen und alle App-Daten löschen, indem du die App und ihre iCloud-Daten in den iCloud-Einstellungen entfernst.</p>
+      <h2>7. Kinder</h2>
+      <p>OpenBook erfasst wissentlich keine personenbezogenen Daten von irgendjemandem, auch nicht von Kindern. Beachte, dass die Bibliothek klassische Literatur enthält, von der einige Werke Themen für Erwachsene behandeln.</p>
+      <h2>8. Änderungen</h2>
+      <p>Sollte sich diese Erklärung ändern, aktualisieren wir diese Seite und das Datum oben.</p>
+      <h2>9. Kontakt</h2>
+      <p>Fragen zum Datenschutz? Schreib an support@simplebuild.it.</p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <a href="index.html"><span data-lang="en">Home</span><span data-lang="it">Home</span><span data-lang="es">Inicio</span><span data-lang="fr">Accueil</span><span data-lang="de">Start</span></a>
+        <a href="support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span><span data-lang="es">Soporte</span><span data-lang="fr">Support</span><span data-lang="de">Support</span></a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+      <p class="small">© 2026 SimpleBuild · OpenBook · <a href="mailto:support@simplebuild.it">support@simplebuild.it</a></p>
+    </div>
+  </footer>
+
+  <script src="lang.js"></script>
+</body>
+</html>

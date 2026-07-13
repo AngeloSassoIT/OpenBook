@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      var q = (location.search.match(/[?&]lang=(en|it|es|fr|de)/) || [])[1];
+      var saved; try { saved = localStorage.getItem('openbook-lang'); } catch (e) {}
+      var nav = (navigator.language || 'en').slice(0,2).toLowerCase();
+      var supported = ['en', 'it', 'es', 'fr', 'de'];
+      var lang = q || saved || (supported.indexOf(nav) >= 0 ? nav : 'en');
+      document.documentElement.classList.add('lang-' + lang);
+      document.documentElement.setAttribute('lang', lang);
+    })();
+  </script>
+  <title>OpenBook — Read the world&#x27;s classics, free</title>
+  <meta name="description" content="OpenBook is a free reading app for hundreds of public-domain classics in 5 languages. Language-first library, offline reading, no account, no tracking.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/icon.png">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="images/icon.png" alt="OpenBook"> OpenBook</a>
+      <nav class="nav">
+        <a href="#features"><span data-lang="en">Features</span><span data-lang="it">Funzioni</span><span data-lang="es">Funciones</span><span data-lang="fr">Fonctionnalités</span><span data-lang="de">Funktionen</span></a>
+        <a href="#how"><span data-lang="en">How it works</span><span data-lang="it">Come funziona</span><span data-lang="es">Cómo funciona</span><span data-lang="fr">Comment ça marche</span><span data-lang="de">So funktioniert&#x27;s</span></a>
+        <a href="#screens"><span data-lang="en">Screenshots</span><span data-lang="it">Anteprime</span><span data-lang="es">Capturas</span><span data-lang="fr">Captures</span><span data-lang="de">Screenshots</span></a>
+        <a href="support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span><span data-lang="es">Soporte</span><span data-lang="fr">Support</span><span data-lang="de">Support</span></a>
+        <a href="privacy.html">Privacy</a>
+        <span class="lang-toggle"><button data-set="en">EN</button><button data-set="it">IT</button><button data-set="es">ES</button><button data-set="fr">FR</button><button data-set="de">DE</button></span>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <img class="appicon" src="images/icon.png" alt="OpenBook app icon">
+    <h1>OpenBook</h1>
+    <p class="subtitle"><span data-lang="en">The great classics, in your language</span><span data-lang="it">I grandi classici, nella tua lingua</span><span data-lang="es">Los grandes clásicos, en tu idioma</span><span data-lang="fr">Grands classiques, libres et hors ligne</span><span data-lang="de">Weltliteratur, frei und offline lesen</span></p>
+    <p class="promo"><span data-lang="en">Hundreds of complete public-domain books, free. Pick your language, download a book and read it offline — calm, beautiful and private.</span><span data-lang="it">Centinaia di libri di pubblico dominio, gratis. Scegli la lingua, scarica un libro e leggilo offline — con calma, in privato.</span><span data-lang="es">Cientos de obras de dominio público, completas y gratis. Elige tu idioma, descarga un libro y léelo sin conexión, con calma y en privado.</span><span data-lang="fr">Des centaines de chefs-d&#x27;œuvre du domaine public, dans une application calme et élégante. Gratuite, hors ligne, sans compte ni traçage — juste vous et de grands livres.</span><span data-lang="de">Hunderte vollständige Klassiker aus dem gemeinfreien Erbe der Welt – gratis, ohne Konto und ohne Werbung. Lies im Original oder in Übersetzung, online wie offline.</span></p>
+    <div class="badges">
+      <a class="appstore-btn" href="#" aria-label="Download on the App Store">
+        <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+        <span class="txt"><small><span data-lang="en">Download on the</span><span data-lang="it">Scarica su</span><span data-lang="es">Descárgalo en</span><span data-lang="fr">Télécharger sur</span><span data-lang="de">Laden im</span></small><strong>App Store</strong></span>
+      </a>
+      <a class="btn ghost" href="#features"><span data-lang="en">Explore features</span><span data-lang="it">Scopri le funzioni</span><span data-lang="es">Descubre las funciones</span><span data-lang="fr">Découvrir les fonctions</span><span data-lang="de">Funktionen entdecken</span></a>
+    </div>
+    <p class="trust"><span data-lang="en">Hundreds of free books · 5 languages · 17 categories · No account, no ads</span><span data-lang="it">Centinaia di libri gratis · 5 lingue · 17 categorie · Nessun account</span><span data-lang="es">Cientos de libros gratis · 5 idiomas · 17 categorías · Sin cuenta</span><span data-lang="fr">Des centaines de livres gratuits · 5 langues · 17 catégories · Sans compte</span><span data-lang="de">Hunderte kostenlose Bücher · 5 Sprachen · 17 Kategorien · Kein Konto</span></p>
+  </div>
+
+  <section id="features">
+    <div class="container">
+      <h2><span data-lang="en">Everything you need to read well</span><span data-lang="it">Tutto ciò che serve per leggere bene</span><span data-lang="es">Todo lo que necesitas para leer bien</span><span data-lang="fr">Tout ce qu&#x27;il faut pour bien lire</span><span data-lang="de">Warum OpenBook</span></h2>
+      <p class="lead"><span data-lang="en">A simple, elegant reading app built for the pleasure of a good book — and for your privacy.</span><span data-lang="it">Un&#x27;app di lettura semplice ed elegante, pensata per il piacere di un buon libro e per la tua privacy.</span><span data-lang="es">Una app de lectura sencilla y elegante, pensada para el placer de un buen libro y el respeto por tu privacidad.</span><span data-lang="fr">Une petite bibliothèque personnelle, pensée dans le moindre détail pour le plaisir de lire.</span><span data-lang="de">Eine ruhige, elegante Lese-App für die großen Werke der Weltliteratur – kostenlos und respektvoll mit deinen Daten.</span></p>
+      <div class="features">
+        <div class="card"><div class="ico">📚</div>
+          <h3><span data-lang="en">Hundreds of classics</span><span data-lang="it">Centinaia di classici</span><span data-lang="es">Cientos de clásicos</span><span data-lang="fr">Des centaines de classiques</span><span data-lang="de">Hunderte Klassiker</span></h3>
+          <p><span data-lang="en">Whole public-domain works, always free.</span><span data-lang="it">Opere complete di pubblico dominio, sempre gratis.</span><span data-lang="es">Grandes obras completas de dominio público, siempre gratis.</span><span data-lang="fr">Des œuvres complètes du domaine public, en cinq langues, entièrement gratuites.</span><span data-lang="de">Hunderte vollständige Werke der Weltliteratur, verteilt auf fünf Sprachen – alle gemeinfrei und gratis.</span></p></div>
+        <div class="card"><div class="ico">🌍</div>
+          <h3><span data-lang="en">Language-first</span><span data-lang="it">La lingua prima di tutto</span><span data-lang="es">Primero, tu idioma</span><span data-lang="fr">La langue d&#x27;abord</span><span data-lang="de">Fünf Sprachen</span></h3>
+          <p><span data-lang="en">Choose from five languages and the library adapts to you.</span><span data-lang="it">Scegli tra cinque lingue e la biblioteca si adatta a te.</span><span data-lang="es">Elige entre cinco idiomas y la biblioteca se adapta a ti.</span><span data-lang="fr">Choisissez la langue des contenus ; la bibliothèque n&#x27;affiche que les livres correspondants.</span><span data-lang="de">Wähle deine Inhaltssprache; die Bibliothek zeigt dir nur Bücher, die es darin auch wirklich gibt.</span></p></div>
+        <div class="card"><div class="ico">📖</div>
+          <h3><span data-lang="en">Original + translations</span><span data-lang="it">Originale + traduzioni</span><span data-lang="es">Original y traducciones</span><span data-lang="fr">Original + traductions</span><span data-lang="de">Original &amp; Übersetzung</span></h3>
+          <p><span data-lang="en">Every work in its original language and its public-domain translations.</span><span data-lang="it">Ogni opera nella lingua originale e nelle traduzioni di pubblico dominio.</span><span data-lang="es">Cada obra en su lengua original y en sus traducciones de dominio público.</span><span data-lang="fr">Chaque livre en version d&#x27;origine et, si elles existent, en traductions du domaine public.</span><span data-lang="de">Jedes Werk in seiner Originalsprache und, wo vorhanden, in gemeinfreien Übersetzungen.</span></p></div>
+        <div class="card"><div class="ico">🌗</div>
+          <h3><span data-lang="en">A calm reader</span><span data-lang="it">Un lettore sereno</span><span data-lang="es">Un lector sereno</span><span data-lang="fr">Un lecteur qui apaise</span><span data-lang="de">Ruhiger Reader</span></h3>
+          <p><span data-lang="en">Sepia, light and night themes to read your way.</span><span data-lang="it">Temi seppia, chiaro e notte per leggere a modo tuo.</span><span data-lang="es">Temas sepia, claro y noche para leer a tu manera.</span><span data-lang="fr">Trois thèmes papier — sépia, clair, nuit — et une taille de texte réglable.</span><span data-lang="de">Drei Papier-Themes, verstellbare Schrift, Kapitelnavigation und markierbarer Text.</span></p></div>
+        <div class="card"><div class="ico">✈️</div>
+          <h3><span data-lang="en">Read offline</span><span data-lang="it">Leggi offline</span><span data-lang="es">Sin conexión</span><span data-lang="fr">Hors ligne, partout</span><span data-lang="de">Offline lesen</span></h3>
+          <p><span data-lang="en">Download a book once and read it anywhere, no connection needed.</span><span data-lang="it">Scarica un libro una volta e leggilo ovunque, senza connessione.</span><span data-lang="es">Descarga un libro una vez y léelo donde quieras, sin internet.</span><span data-lang="fr">Les livres se téléchargent une fois, puis restent sur votre appareil pour toujours.</span><span data-lang="de">Beim ersten Öffnen lädt das Buch – danach bleibt es auf dem Gerät, auch ohne Netz.</span></p></div>
+        <div class="card"><div class="ico">🪶</div>
+          <h3><span data-lang="en">Truly tiny</span><span data-lang="it">Davvero leggera</span><span data-lang="es">Ligera de verdad</span><span data-lang="fr">Une appli minuscule</span><span data-lang="de">Winziger Download</span></h3>
+          <p><span data-lang="en">The app is about 3 MB; books arrive when you open them.</span><span data-lang="it">L&#x27;app pesa circa 3 MB; i libri arrivano quando li apri.</span><span data-lang="es">La app pesa apenas unos 3 MB; los libros llegan al abrirlos.</span><span data-lang="fr">Environ 3 Mo à installer : elle ne prend presque pas de place.</span><span data-lang="de">Die App selbst ist nur rund 3 MB groß; Bücher kommen erst bei Bedarf dazu.</span></p></div>
+        <div class="card"><div class="ico">🔒</div>
+          <h3><span data-lang="en">Private by design</span><span data-lang="it">Privata per design</span><span data-lang="es">Privada por diseño</span><span data-lang="fr">Privé par principe</span><span data-lang="de">Privat by Design</span></h3>
+          <p><span data-lang="en">No account, no tracking — your data stays in your iCloud.</span><span data-lang="it">Nessun account, nessun tracciamento — i dati restano nel tuo iCloud.</span><span data-lang="es">Sin cuenta ni seguimiento: tus datos se quedan en tu iCloud.</span><span data-lang="fr">Aucun compte. Vos favoris et votre progression restent dans votre iCloud, à vous seul.</span><span data-lang="de">Favoriten und Fortschritt bleiben in deiner iCloud. Kein Konto, kein Tracking, keine Werbung.</span></p></div>
+        <div class="card"><div class="ico">♿</div>
+          <h3><span data-lang="en">For everyone</span><span data-lang="it">Per tutti</span><span data-lang="es">Para todos</span><span data-lang="fr">Accessible à tous</span><span data-lang="de">Für alle zugänglich</span></h3>
+          <p><span data-lang="en">VoiceOver, Larger Text, dark mode and strong contrast.</span><span data-lang="it">VoiceOver, testo più grande, modalità scura e contrasto elevato.</span><span data-lang="es">VoiceOver, texto más grande, modo oscuro y buen contraste.</span><span data-lang="fr">VoiceOver, texte plus grand, mode sombre, contraste et animations réduites.</span><span data-lang="de">VoiceOver, Dynamic Type, Dunkelmodus, Kontrast und reduzierte Bewegung inklusive.</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="alt">
+    <div class="container">
+      <h2><span data-lang="en">Start reading in four steps</span><span data-lang="it">Inizia a leggere in quattro passi</span><span data-lang="es">Empezar es así de fácil</span><span data-lang="fr">Commencer à lire en quatre pas</span><span data-lang="de">So einfach geht&#x27;s</span></h2>
+      <p class="lead"><span data-lang="en">From the cover to the first page in seconds.</span><span data-lang="it">Dalla copertina alla prima pagina in pochi secondi.</span><span data-lang="es">De la portada a la primera página en cuatro pasos.</span><span data-lang="fr">De l&#x27;ouverture de l&#x27;appli à votre première page, tout est simple et rapide.</span><span data-lang="de">In vier Schritten von der Sprache zum Lesevergnügen.</span></p>
+      <div class="steps">
+        <div class="step"><div class="num">1</div>
+          <h3><span data-lang="en">Pick your language</span><span data-lang="it">Scegli la lingua</span><span data-lang="es">Elige tu idioma</span><span data-lang="fr">Choisissez votre langue</span><span data-lang="de">Sprache wählen</span></h3>
+          <p><span data-lang="en">Choose the content language and see only the books available in it.</span><span data-lang="it">Seleziona la lingua dei contenuti e vedi solo i libri disponibili.</span><span data-lang="es">Selecciona el idioma de los contenidos y verás solo los libros disponibles en él.</span><span data-lang="fr">Sélectionnez la langue des contenus qui vous intéresse.</span><span data-lang="de">Entscheide, in welcher Sprache du lesen möchtest.</span></p></div>
+        <div class="step"><div class="num">2</div>
+          <h3><span data-lang="en">Choose a book</span><span data-lang="it">Scegli un libro</span><span data-lang="es">Escoge un libro</span><span data-lang="fr">Choisissez un livre</span><span data-lang="de">Buch aussuchen</span></h3>
+          <p><span data-lang="en">Browse by category and open whatever you fancy.</span><span data-lang="it">Sfoglia per categoria e apri quello che vuoi.</span><span data-lang="es">Explora por categorías y abre la obra que te apetezca.</span><span data-lang="fr">Parcourez les catégories et ouvrez l&#x27;œuvre qui vous appelle.</span><span data-lang="de">Stöbere nach Kategorie und öffne, was dich reizt.</span></p></div>
+        <div class="step"><div class="num">3</div>
+          <h3><span data-lang="en">It downloads &amp; opens</span><span data-lang="it">Si scarica e si apre</span><span data-lang="es">Se descarga y se abre</span><span data-lang="fr">Il se télécharge, il s&#x27;ouvre</span><span data-lang="de">Laden &amp; öffnen</span></h3>
+          <p><span data-lang="en">The book arrives in seconds and stays on your device.</span><span data-lang="it">Il libro arriva in pochi secondi e resta sul dispositivo.</span><span data-lang="es">El libro llega en segundos y se guarda en tu dispositivo.</span><span data-lang="fr">Le texte arrive à la première ouverture, puis reste hors ligne.</span><span data-lang="de">Das Buch lädt einmalig herunter und öffnet sich sofort.</span></p></div>
+        <div class="step"><div class="num">4</div>
+          <h3><span data-lang="en">Read your way</span><span data-lang="it">Leggi a modo tuo</span><span data-lang="es">Lee a tu manera</span><span data-lang="fr">Lisez à votre façon</span><span data-lang="de">Nach deiner Art lesen</span></h3>
+          <p><span data-lang="en">Switch themes, adjust the text, read offline and pick up with “Continue reading”.</span><span data-lang="it">Cambia tema, regola il testo, leggi offline e riprendi con “Continua a leggere”.</span><span data-lang="es">Cambia el tema, ajusta el texto, lee sin conexión y retoma con “Seguir leyendo”.</span><span data-lang="fr">Thèmes, taille du texte, hors ligne et reprise de lecture quand vous voulez.</span><span data-lang="de">Theme wählen, offline schmökern, jederzeit weiterlesen.</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="screens">
+    <div class="container">
+      <h2><span data-lang="en">A closer look</span><span data-lang="it">Uno sguardo da vicino</span><span data-lang="es">Un vistazo a OpenBook</span><span data-lang="fr">Un aperçu d&#x27;OpenBook</span><span data-lang="de">Ein Blick in die App</span></h2>
+      <p class="lead"><span data-lang="en">How you read, choose and enjoy.</span><span data-lang="it">Come si legge, si sceglie e ci si gode un libro.</span><span data-lang="es">Así se lee, se elige y se disfruta.</span><span data-lang="fr">Une expérience de lecture nette et sereine, du choix du livre à la dernière page.</span><span data-lang="de">Von der Bibliothek bis zum Nachtmodus – so liest sich OpenBook.</span></p>
+    </div>
+    <div class="shots">
+      <figure><img src="images/screen-library.png" alt="OpenBook" loading="lazy">
+        <figcaption><span data-lang="en">Your library, by category.</span><span data-lang="it">La tua biblioteca, per categoria.</span><span data-lang="es">Tu biblioteca, ordenada por categorías.</span><span data-lang="fr">Votre bibliothèque, rangée par catégorie.</span><span data-lang="de">Deine Bibliothek, nach Kategorien geordnet.</span></figcaption></figure>
+      <figure><img src="images/screen-languages.png" alt="OpenBook" loading="lazy">
+        <figcaption><span data-lang="en">Five languages to choose from.</span><span data-lang="it">Cinque lingue tra cui scegliere.</span><span data-lang="es">Cinco idiomas para elegir tus lecturas.</span><span data-lang="fr">Cinq langues : originaux et traductions.</span><span data-lang="de">Fünf Inhaltssprachen zur Auswahl.</span></figcaption></figure>
+      <figure><img src="images/screen-detail.png" alt="OpenBook" loading="lazy">
+        <figcaption><span data-lang="en">The original and its editions.</span><span data-lang="it">L&#x27;originale e le sue edizioni.</span><span data-lang="es">El original y sus ediciones.</span><span data-lang="fr">La fiche du livre et ses éditions.</span><span data-lang="de">Original und Übersetzungen jedes Buchs.</span></figcaption></figure>
+      <figure><img src="images/screen-reader.png" alt="OpenBook" loading="lazy">
+        <figcaption><span data-lang="en">The reader in sepia.</span><span data-lang="it">Il lettore in seppia.</span><span data-lang="es">El lector en tema sepia.</span><span data-lang="fr">Le lecteur en sépia, doux et reposant.</span><span data-lang="de">Der Reader im warmen Sepia-Ton.</span></figcaption></figure>
+      <figure><img src="images/screen-night.png" alt="OpenBook" loading="lazy">
+        <figcaption><span data-lang="en">Night mode for quiet hours.</span><span data-lang="it">Modalità notte per le ore tranquille.</span><span data-lang="es">Modo noche para tus horas más tranquilas.</span><span data-lang="fr">Le lecteur de nuit, en vrai mode sombre.</span><span data-lang="de">Echter Dunkelmodus für die Nacht.</span></figcaption></figure>
+      <figure><img src="images/screen-settings.png" alt="OpenBook" loading="lazy">
+        <figcaption><span data-lang="en">Themes, text size and accessibility.</span><span data-lang="it">Temi, dimensione del testo e accessibilità.</span><span data-lang="es">Temas, tamaño de texto y accesibilidad.</span><span data-lang="fr">Thèmes, taille du texte et accessibilité.</span><span data-lang="de">Themes, Textgröße und Barrierefreiheit.</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="closing alt">
+    <div class="container">
+      <h2 class="close-h"><span data-lang="en">Your <em>library</em> is waiting</span><span data-lang="it">La tua <em>biblioteca</em> ti aspetta</span><span data-lang="es">Tu <em>biblioteca</em> te espera</span><span data-lang="fr">Votre <em>bibliothèque</em> vous attend</span><span data-lang="de">Deine <em>Bibliothek</em> wartet</span></h2>
+      <div class="badges">
+        <a class="appstore-btn" href="#" aria-label="Download on the App Store">
+          <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+          <span class="txt"><small><span data-lang="en">Download on the</span><span data-lang="it">Scarica su</span><span data-lang="es">Descárgalo en</span><span data-lang="fr">Télécharger sur</span><span data-lang="de">Laden im</span></small><strong>App Store</strong></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <a href="index.html"><span data-lang="en">Home</span><span data-lang="it">Home</span><span data-lang="es">Inicio</span><span data-lang="fr">Accueil</span><span data-lang="de">Start</span></a>
+        <a href="support.html"><span data-lang="en">Support</span><span data-lang="it">Supporto</span><span data-lang="es">Soporte</span><span data-lang="fr">Support</span><span data-lang="de">Support</span></a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+      <p class="small">© 2026 SimpleBuild · OpenBook · <a href="mailto:support@simplebuild.it">support@simplebuild.it</a></p>
+      <p class="small"><span data-lang="en">OpenBook — the great classics, free and private.</span><span data-lang="it">OpenBook — i grandi classici, gratis e in privato.</span><span data-lang="es">OpenBook — los grandes clásicos, gratis y en privado.</span><span data-lang="fr">OpenBook — les grands livres, libres et à vous.</span><span data-lang="de">OpenBook – die Klassiker der Welt, frei und offline.</span></p>
+    </div>
+  </footer>
+
+  <script src="lang.js"></script>
+</body>
+</html>
